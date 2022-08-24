@@ -25,7 +25,7 @@ def index():
 				sender ='*********************',
 				recipients = ['*********************']
 			)
-    msg.body = 'Hello Flask message sent from Flask-Mail. Do not respond to this message.'
+    msg.body = 'Hello a threat was detected. See attached image. Flask message sent from Flask-Mail. Do not respond to this message.'
 
 # attach image, needs to be in same location as app or include path    
     with app.open_resource('puppy.jpg') as pup:
