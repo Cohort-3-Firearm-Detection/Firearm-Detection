@@ -1,10 +1,11 @@
 # Firearm-Detection-
 
-Suggested to make a virtual environment and pip install Flask and Flask-Mail
+In your virtual environment make sure you have Flask and Flask_Mail installed
 
-You need to add your own email and password to make email send.
-
+Suggested:
 Run object.py to start and enter a decimal value between 0 and 1.
+
+
 
 flask mail documentation
 https://pythonhosted.org/Flask-Mail/#api
