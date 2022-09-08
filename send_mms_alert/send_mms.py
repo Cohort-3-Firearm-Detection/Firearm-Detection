@@ -1,5 +1,10 @@
 import os
 from twilio.rest import Client
+from flask import send_from_directory
+from flask import Flask
+
+# app = Flask(__name__)
+# UPLOAD_FOLDER = 'Firearm-Detection/results/'
 
 account_sid = os.environ['TWILIO_ACCOUNT_SID']
 auth_token = os.environ['TWILIO_AUTH_TOKEN']
@@ -13,7 +18,17 @@ for number in numbers_to_message:
         from_='+12517664504',
         to=number
     )
-  
+
+
+
+# @app.route('Firearm-Detection/results/detection.png', methods=['GET', 'POST'])
+# def uploaded_file(filename):
+#     return send_from_directory(UPLOAD_FOLDER,filename)
+
+# if __name__ == "__main__":
+#     app.run()
+
+
 print(message.status)
 print(message.account_sid)
 print(message.sid)

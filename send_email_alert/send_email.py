@@ -1,6 +1,7 @@
 # importing libraries
 from flask import Flask
 from flask_mail import Mail, Message
+from Tensorflow.live_detect_app import obj
 
 app = Flask(__name__)
 # mail = Mail(app) # instantiate the mail class
@@ -23,13 +24,13 @@ def index():
     msg = Message(
 				'Hello',
 				sender ='fva_alert@outlook.com',
-				recipients = ['jerewalker@teksystems.com', 'jhagerman@teksystems.com', 'mdave@teksystems.com', 'acovarrubio@teksystems.com', 'dchamness@teksystems.com']
+				recipients = [ 'jerewalker@teksystems.com', 'mdave@teksystems.com', 'jhagerman@teksystems.com', 'acovarrubio@teksystems.com'] #dchamness@teksystems.com
 			)
-    msg.body = 'Hello a threat was detected. See attached image. Flask message sent from Flask-Mail. Do not respond to this message.'
+    msg.body = 'Hello a threat was detected with a confidence level of {}. See attached image. Flask message sent from Flask-Mail. Do not respond to this message.'(obj)
 
 # attach image, needs to be in same location as app or include path    
-    with app.open_resource('puppy.jpg') as pup:
-        msg.attach('puppy.jpg', 'image/jpeg', pup.read())
+    with app.open_resource('results/detection.png') as detect:
+        msg.attach('results/detection.png', 'image/png', detect.read())
 
 # send email    
     mail.send(msg)
