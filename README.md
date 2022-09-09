@@ -1,6 +1,6 @@
 # Firearm-Detection-
 
-Before starting follow [these directions] (https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/install.html)  to set up your device and an environment for running Tensorflow. 
+Before starting follow [these directions](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/install.html)  to set up your device and an environment for running Tensorflow. 
 
 Pip install Flask, Flask_Mail, Twilio, python-certifi-win32
 
