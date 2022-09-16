@@ -2,7 +2,8 @@
 
 User will need to create virtual environment to install Python dependencies.\
 run command: pip install twilio, pipenv\
-pipenv install python-certifi-win32\
+pip install python-certifi-win32\
+pip install pyimgur\
 run either export or set commands to set environment variables\
 TWILIO_ACCOUNT_SID=AC39c28a1f0800234fde5f5d99833d2175\
 TWILIO_AUTH_TOKEN=be8ae6f06245cb9a127da359a66ad960\
