@@ -35,7 +35,7 @@ class Detection:
     detection_model = model_builder.build(model_config=configs['model'], is_training=False)
 
     ckpt = tf.compat.v2.train.Checkpoint(model=detection_model)
-    ckpt.restore(os.path.join(CHECKPOINT_PATH, 'ckpt-13')).expect_partial()
+    ckpt.restore(os.path.join(CHECKPOINT_PATH, 'ckpt-43')).expect_partial()
 
     @classmethod
     def detect_fn(cls, image):
