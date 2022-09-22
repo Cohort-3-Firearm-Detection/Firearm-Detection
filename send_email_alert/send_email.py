@@ -8,8 +8,8 @@ class SendEmail:
     @classmethod
     def email(self):
         sg = sendgrid.SendGridAPIClient(api_key=os.environ.get('SENDGRID_API_KEY'))
-        from_email = Email("fva_alert@outlook.com")  # Change to your verified sender
-        to_email = [To('jerewalker@teksystems.com'), To('acovarrubio@teksystems.com')]  # Change to your recipient
+        from_email = Email("jeremywalker1216@gmail.com")  # Change to your verified sender
+        to_email = [To('jerewalker@teksystems.com'), To('acovarrubio@teksystems.com'), To("jeremywalker1216@gmail.com")]  # Change to your recipient
         subject = "Detection Found"
          
         content = Content("text/plain", "A detection has been made. See image.")
