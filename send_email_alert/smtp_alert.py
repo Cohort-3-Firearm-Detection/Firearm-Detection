@@ -18,7 +18,7 @@ class SendEmail:
         with open(PATH, 'rb') as f:
             file_data = f.read()
             file_type = imghdr.what(f.name)
-            file_name = f.name
+            file_name = "Detection.png"
 
         msg.add_attachment(file_data, maintype = 'image', subtype = file_type, filename = file_name)
 
