@@ -2,7 +2,7 @@
 
 Before starting follow [these directions](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/install.html)  to set up your device and an environment for running Tensorflow. 
 
-pip install Flask, Flask_Mail, Twilio, python-certifi-win32, pyimgur
+pip install secure-smtplib, Twilio, python-certifi-win32, pyimgur
 
 Set environment variables:
   PC: 
@@ -14,4 +14,4 @@ Set environment variables:
     set TWILIO_AUTH_TOKEN=be8ae6f06245cb9a127da359a66ad960
 
 To start app:
-  Run object.py
+  Run app.py
