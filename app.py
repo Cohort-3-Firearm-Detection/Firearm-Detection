@@ -4,7 +4,7 @@ from send_email_alert.smtp_alert import SendEmail
 
 PATH = "Tensorflow/workspace/images/detection.png"
 REPS = [ 'jhagerman@teksystems.com','acovarrubio@teksystems.com','jerewalker@teksystems.com','mdave@teksystems.com','dchamness@teksystems.com']
-NUM = '+12146051373'
+NUM = '+15022165263'
 
 Detection.live_detect()
 if Detection.conf_lev >= 0.7:
