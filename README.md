@@ -1,4 +1,4 @@
-# Firearm-Detection-
+# Firearm-Vision-Application (FVA)
 
 Before starting follow [these directions](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/install.html)  to set up your device and an environment for running Tensorflow. 
 
