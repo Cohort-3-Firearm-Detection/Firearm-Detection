@@ -21,14 +21,14 @@ class SendText:
         setattr(SendText, 'url', uploaded_image.link)
 
     @classmethod
-    def mms(cls, number, MSG):
-        numbers_to_message = [number]
+    def mms(cls, NUM , MSG):
+        numbers_to_message = [NUM]
         for number in numbers_to_message:
             message = cls.client.messages.create(
                 body= MSG,
                 media_url=[cls.url],
                 from_='+12517664504',
-                to=number
+                to=NUM
             )
         print(message.status)
         print(message.account_sid)

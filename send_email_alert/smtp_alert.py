@@ -8,11 +8,11 @@ class SendEmail:
     EMAIL_PASSWORD='FVA@22ml'
 
     @classmethod
-    def send_email(cls, PATH, MSG, recipients):
+    def send_email(cls, PATH, MSG, REPS):
         msg = EmailMessage()
         msg['Subject'] = 'FVA Detection'
         msg['From'] = cls.EMAIL_ADDRESS
-        msg['To'] = recipients 
+        msg['To'] = REPS
         msg.set_content(MSG)    
 
         with open(PATH, 'rb') as f:
